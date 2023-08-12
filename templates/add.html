@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <body>
+        <div class="mb-3">
+            <form action="/add" method="post">
+                <label for="text" class="form-label">Add Journey</label>
+                <input type="text" autofocus id="name" name="name" placeholder="Item Name" class="form-control">
+                <button class="btn btn-primary" type="submit">Create Journey</button>
+            </form>
+        </div>
+    </body>
+
+{% endblock %}

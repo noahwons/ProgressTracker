@@ -1,0 +1,41 @@
+.journeyitem {
+    background-color: #52514e;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px black;
+}
+
+.header {
+    font-size: 20px;
+}
+
+body {
+    background-color: #252629;
+}
+
+nav {
+    background-color: #1a1a1c
+}
+
+.navelement {
+    color: white;
+}
+
+.indexusername {
+    color: white;
+}
+
+.viewbutton {
+    box-shadow: 10px 10px 5px black;
+}
+
+.viewbutton:hover {
+    background-color: gray;
+    border-color: gray;
+}
+
+.loginbody {
+    background-color: white;
+}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Entries
+{% endblock %}
+
+{% block main %}
+
+    <body>
+
+        <table class="table table-light">
+            <tr>
+                <th>{{ item["name"] }}</th>
+            </tr>
+        </table>
+        {% if entries %}
+            {% for entry in entries %}
+                    <div class="journeyitem mb-3">{{ entry["date"] }}: {{ entry["statement"] }}</div>
+            {% endfor %}
+        {% else %}
+            <h5>Begin your Journey by adding an entry!</h5>
+        {% endif %}
+        <form action="addentry" method="post">
+            <button class="btn btn-primary" type="submit" name="id" value={{ item["id"] }}>Add</button>
+        </form>
+    </body>
+
+{% endblock %}

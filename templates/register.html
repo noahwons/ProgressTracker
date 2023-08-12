@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <body class="loginbody">
+        <h1>Register</h1>
+        <form action="/register" method="post">
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" type="text" autofocus id="username" name="username" placeholder="username">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" type="password" autofocus id="password" name="password" placeholder="password">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" type="password" autofocus id="confirm" name="confirm" placeholder="confirm password">
+            </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+    </body>
+
+{% endblock %}
